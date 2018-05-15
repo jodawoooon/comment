@@ -1,0 +1,18 @@
+<h2>리스트 작성</h2>
+<%= form_for :article, url: '/articles/' do |f| %>
+    <p>
+        <%= f.label :우선순위 %><br>
+        <%= f.text_field :title %>
+    </p>
+    <p>
+        <%= f.label :내용 %><br>
+        <%= f.text_field :content %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
+<style>
+ body {background-color: #ECCEF5; font-size:20pt; font-family: 'Do Hyeon', sans-serif;}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
